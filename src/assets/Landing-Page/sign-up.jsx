@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./home";
+import "./home.jsx";
 import "./style.css"
-import "./auth.css"
+import "./auth.css";
  
 
 function Signup() {
