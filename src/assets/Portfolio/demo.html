@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Investment Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./demo.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="https://via.placeholder.com/40" alt="Logo">
+                <h2>Trade Plus</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="nav-group">
+                    <h3>Navigation</h3>
+                    <a href="dashboard.html" class="nav-link">
+                        <i class="fas fa-chart-line"></i>
+                        Dashboard
+                    </a>
+                    <a href="portfolio.html" class="nav-link active">
+                        <i class="fas fa-wallet"></i>
+                        My Portfolio
+                    </a>
+                    <a href="sip.html" class="nav-link">
+                        <i class="fas fa-piggy-bank"></i>
+                        SIP Planner
+                    </a>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="header">
+                <h1>My Investment Portfolio</h1>
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/40" alt="User">
+                    <span>John Doe</span>
+                </div>
+            </div>
+
+            <!-- Portfolio Summary -->
+            <div class="portfolio-summary">
+                <div class="summary-card">
+                    <h3>Total Investment</h3>
+                    <h2>₹1,85,420</h2>
+                    <p class="positive">+12.8% all time</p>
+                </div>
+                <div class="summary-card">
+                    <h3>Current Value</h3>
+                    <h2>₹2,10,750</h2>
+                    <p class="positive">+₹25,330 profit</p>
+                </div>
+                <div class="summary-card">
+                    <h3>Asset Allocation</h3>
+                    <div class="allocation-chart" id="allocationChart"></div>
+                </div>
+            </div>
+
+            <!-- Portfolio Holdings -->
+            <div class="holdings-container">
+                <h2>Your Holdings</h2>
+                <table id="holdingsTable">
+                    <thead>
+                        <tr>
+                            <th>Fund Name</th>
+                            <th>Category</th>
+                            <th>Units</th>
+                            <th>Avg. Cost</th>
+                            <th>Invested</th>
+                            <th>Current Value</th>
+                            <th>Return</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bluechip Equity Fund</td>
+                            <td>Large Cap</td>
+                            <td>120</td>
+                            <td>₹200.50</td>
+                            <td>₹24,060</td>
+                            <td>₹29,490</td>
+                            <td class="positive">+22.6%</td>
+                        </tr>
+                        <tr>
+                            <td>Corporate Bond Fund</td>
+                            <td>Debt</td>
+                            <td>85</td>
+                            <td>₹110.75</td>
+                            <td>₹9,413</td>
+                            <td>₹10,200</td>
+                            <td class="positive">+8.4%</td>
+                        </tr>
+                        <tr>
+                            <td>Balanced Advantage Fund</td>
+                            <td>Hybrid</td>
+                            <td>150</td>
+                            <td>₹180.20</td>
+                            <td>₹27,030</td>
+                            <td>₹31,500</td>
+                            <td class="positive">+16.5%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Recent Transactions -->
+            <div class="transactions-container">
+                <h2>Recent Transactions</h2>
+                <div class="transaction-list" id="transactionList">
+                    <div class="transaction">
+                        <div class="transaction-detail">
+                            <i class="fas fa-arrow-down positive"></i>
+                            <div>
+                                <h4>SIP Purchase</h4>
+                                <p>Bluechip Equity Fund</p>
+                            </div>
+                        </div>
+                        <div class="transaction-amount">
+                            <p>₹5,000</p>
+                            <small>15 May 2023</small>
+                        </div>
+                    </div>
+                    <div class="transaction">
+                        <div class="transaction-detail">
+                            <i class="fas fa-arrow-up negative"></i>
+                            <div>
+                                <h4>Redemption</h4>
+                                <p>Corporate Bond Fund</p>
+                            </div>
+                        </div>
+                        <div class="transaction-amount">
+                            <p>₹8,000</p>
+                            <small>10 May 2023</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>

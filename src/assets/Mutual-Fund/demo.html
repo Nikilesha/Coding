@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Plus - Mutual Funds</title>
+    <link rel="stylesheet" href="./demo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="left-menu">
+            <div class="back-button"><a href="#"><i class="fas fa-arrow-left"></i> Back</a></div>
+            <div class="logo">
+                <img src="https://via.placeholder.com/150x50?text=Trade+Plus" alt="Trade Plus Logo">
+            </div>
+            <ul>
+                <li><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-chart-line"></i> Stocks</a></li>
+                <li><a href="#"><i class="fas fa-exchange-alt"></i> F&O</a></li>
+                <li><a href="#"><i class="fas fa-newspaper"></i> News</a></li>
+                <li><a href="#"><i class="fas fa-eye"></i> Watch List</a></li>
+                <li><a href="#"><i class="fas fa-bell"></i> Notifications</a></li>
+                <li class="active"><a href="#"><i class="fas fa-rupee-sign"></i> Mutual Funds</a></li>
+                <li><a href="#"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <header>
+                <h1>Trade Plus Mutual Funds</h1>
+                <div class="user-actions">
+                    <button class="btn-primary large-btn"><i class="fas fa-plus"></i> New Investment</button>
+                    <button class="btn-secondary large-btn"><i class="fas fa-download"></i> Export</button>
+                </div>
+            </header>
+            
+            <nav class="horizontal-tabs">
+                <ul>
+                    <li class="active"><a href="#overview"><i class="fas fa-chart-pie"></i> Overview</a></li>
+                    <li><a href="#returns"><i class="fas fa-chart-line"></i> Returns</a></li>
+                    <li><a href="#risk-ratios"><i class="fas fa-shield-alt"></i> Risk Ratios</a></li>
+                    <li><a href="#fund-managers"><i class="fas fa-user-tie"></i> Fund Managers</a></li>
+                    <li><a href="#asset-allocation"><i class="fas fa-balance-scale"></i> Asset Allocation</a></li>
+                    <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="#tools"><i class="fas fa-tools"></i> Tools</a></li>
+                    <li><a href="#updates"><i class="fas fa-newspaper"></i> Updates</a></li>
+                </ul>
+            </nav>
+            
+            <div class="tab-content">
+                <section id="overview" class="tab-pane active">
+                    <div class="fund-cards-container">
+                        <div class="fund-card">
+                            <h3>Canara Robeco Bluechip Equity Fund</h3>
+                            <p><strong>Category:</strong> Large Cap</p>
+                            <p><strong>1Y Return:</strong> <span class="positive">18.75%</span></p>
+                            <p><strong>3Y Return:</strong> <span class="positive">13.75%</span></p>
+                            <button class="btn-invest">Invest Now</button>
+                        </div>
+                        <div class="fund-card">
+                            <h3>HDFC Large Cap Fund</h3>
+                            <p><strong>Category:</strong> Large Cap</p>
+                            <p><strong>1Y Return:</strong> <span class="positive">16.19%</span></p>
+                            <p><strong>3Y Return:</strong> <span class="positive">16.19%</span></p>
+                            <button class="btn-invest">Invest Now</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="returns" class="tab-pane">
+                    <h3 class="category-header">Large Cap Funds</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Fund Name</th>
+                                <th>1Y</th>
+                                <th>3Y</th>
+                                <th>5Y</th>
+                                <th>10Y</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Canara Robeco Bluechip Equity Fund</td>
+                                <td class="positive">18.75%</td>
+                                <td class="positive">13.75%</td>
+                                <td class="positive">22.31%</td>
+                                <td class="positive">12.83%</td>
+                            </tr>
+                            <tr>
+                                <td>HDFC Large Cap Fund</td>
+                                <td class="positive">16.19%</td>
+                                <td class="positive">16.19%</td>
+                                <td class="positive">25.89%</td>
+                                <td class="positive">12.35%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section id="risk-ratios" class="tab-pane">
+                    <h3>Risk Ratios</h3>
+                    <!-- Add content for risk ratios here -->
+                </section>
+
+                <section id="fund-managers" class="tab-pane">
+                    <h3>Fund Managers</h3>
+                    <!-- Add content for fund managers here -->
+                </section>
+
+                <section id="asset-allocation" class="tab-pane">
+                    <h3>Asset Allocation</h3>
+                    <!-- Add content for asset allocation here -->
+                </section>
+
+                <section id="portfolio" class="tab-pane">
+                    <h3>Portfolio</h3>
+                    <!-- Add content for portfolio here -->
+                </section>
+
+                <section id="tools" class="tab-pane">
+                    <h3>Tools</h3>
+                    <!-- Add content for tools here -->
+                </section>
+
+                <section id="updates" class="tab-pane">
+                    <h3>Updates</h3>
+                    <!-- Add content for updates here -->
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="./demo.js"></script>
+</body>
+</html>
